@@ -62,11 +62,11 @@
       <h3>Examples</h3>
       <div id="exampleList"></div>
     </div>
+    <div class="emscripten" id="status">Downloading...</div>
+    <div class="emscripten">
+      <progress value="0" max="100" id="progress" hidden=1></progress>  
+    </div>
     <div class="emscripten_border">
-      <div class="emscripten" id="status">Downloading...</div>
-      <div class="emscripten">
-        <progress value="0" max="100" id="progress" hidden=1></progress>  
-      </div>
       <canvas class="emscripten" id="canvas"  oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
     </div>
     <div class="emscripten" id="desc">
@@ -188,6 +188,7 @@
     <script type='text/javascript'>
       var examples = [
         ['Hello C++', 'cpp-empty-test', 'This example showcases a cocos2d-x C++ project compiled into .wasm by <a href="https://emscripten.org/">Emscripten</a>. <br/>[<a href="https://github.com/WuJiayiSH/cocos2d-x/tree/v3-emscripten/tests/cpp-empty-test">Source</a>]'],
+        ['Postprocessing Bloom', 'cpp-postprocessing-bloom', 'A bloom post-processing effect introduced in <a href="https://learnopengl.com/Advanced-Lighting/Bloom">Learn OpenGL</a>. <br/>[<a href="https://github.com/WuJiayiSH/cocos2d-x/tree/v3-emscripten/tests/cpp-postprocessing-bloom">Source</a>]'],
       ]
 
       var i = window.location.search.substring(1)
